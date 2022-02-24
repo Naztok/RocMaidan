@@ -48,10 +48,25 @@ function closeInvisibleNav() {
 } */
 
 function sendForm(e) {
+  //const { URLSearchParams } = require("url");
+  //const url = new URL(window.location.href);
+  //let params = new URLSearchParams(url.search.slice(1));
+
+  /*const params = new URLSearchParams();
+  params.append("a", 1);*/
+
+  //console.log(new URL(window.location.href));
   let contactUsForm = document.querySelector("form.contact-us-form");
   let formData = new FormData(contactUsForm);
+  let entries = [];
   for (let elem of formData.entries()) {
-    console.log(elem);
+    entries.push(elem);
   }
-  console.log(formData.entries());
+  console.log(entries); 
+
+    fetch("http://127.0.0.1:5500/functions/formEntry.js", { method: "POST", body: entries })
+    .then(res => res.json())
+    .then(json => console.log(json));
+
+
 }

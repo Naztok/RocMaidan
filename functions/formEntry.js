@@ -1,5 +1,7 @@
 const nodemailer = require("nodemailer");
-let transport = nodemailer.createTransport({
+import querystring from "querystring";
+
+/* let transport = nodemailer.createTransport({
   host: "smtp.mailtrap.io",
   port: 2525,
   auth: {
@@ -19,12 +21,25 @@ transport.sendMail(message, function(err, info) {
   } else {
     console.log(info);
   }
-});
+}); */
 
-exports.handler = function(event, context, callback) {
-  console.log("Yeah this ran");
-  callback(null, {
-    statusCode: 200,
-    body: "Hello, World"
+exports.handler = async (event, context) => {
+  const bodyParser = require("body-parser");
+  let params;
+  app.use(
+    bodyParser.urlencoded({
+      extended: true
+    })
+  );
+
+  app.use(bodyParser.json());
+
+  app.post("/endpoint", (req, res) => {
+    params = req.body;
+    console.log(req.body);
   });
+  return {
+    statusCode: 200,
+    body: `${params}`
+  };
 };

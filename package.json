@@ -17,7 +17,5 @@
     "url": "https://github.com/dpsoccerdude101/RocMaidan/issues"
   },
   "homepage": "https://github.com/dpsoccerdude101/RocMaidan#readme",
-  "dependencies": {
-    "nodemailer": "^6.4.6"
-  }
+  "dependencies": {}
 }
