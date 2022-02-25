@@ -1,0 +1,5 @@
+# Redirects from what the browser requests to what we serve
+/donate            https://www.paypal.com/donate/?hosted_button_id=DAZ8D46BRBKMU&fbclid=IwAR0K26hmA9jwW064j8PDRCn8Xqx10tQtr1kDplS_utEmWwgaa1VIJvJmG2I
+#/blog/my-post.php  /blog/my-post
+#/news              /blog
+#/cuties            https://www.petsofnetlify.com
