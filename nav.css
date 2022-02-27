@@ -237,7 +237,8 @@ i {
 }
 #donate-banner {
   font-size: 2vw;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px black;
   border: 1px solid white;
   padding: 4px 12.5px;
   border-radius: 25px;
@@ -370,6 +371,7 @@ i {
 }
 .article-paragraph {
   margin-top: 1em;
+  margin-bottom: 1em;
   /* font-size: 1.25vw; */
 }
 .article-header {
