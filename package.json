@@ -17,5 +17,7 @@
     "url": "https://github.com/dpsoccerdude101/RocMaidan/issues"
   },
   "homepage": "https://github.com/dpsoccerdude101/RocMaidan#readme",
-  "dependencies": {}
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.1"
+  }
 }
