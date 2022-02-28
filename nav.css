@@ -470,14 +470,14 @@ i {
   box-shadow: 2px 2px 20px var(--drop-shadow);
   margin: 0 auto 6vh auto;
   background-color: var(--bg-yellow);
-  border: calc(1rem/6) solid var(--bg-color);
+  border: calc(1rem / 6) solid var(--bg-color);
 }
 .contact-us-form h1 {
   margin-top: 0;
   font-weight: 200;
 }
 .contact-us-form div {
-  border: calc(1rem/12) solid gray;
+  border: calc(1rem / 12) solid gray;
   margin: 0.75rem 0;
   padding: 1rem 1.5rem;
   border-radius: 0.75rem;
@@ -486,11 +486,21 @@ i {
   display: block;
   text-align: left;
   color: #333;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
-.contact-us-form input, .contact-us-form textarea {
+.contact-us-form input,
+.contact-us-form textarea {
   width: 100%;
   border: none;
+  background: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+.contact-us-form textarea {
+  width: 100%;
+  border: none;
+  height: 7em;
   background: none;
   outline: none;
   font-size: 1.5rem;
@@ -561,7 +571,7 @@ i {
     box-shadow: inset 0px 1px white;
     display: flex;
     position: fixed;
-    height: 475px;
+    /* height: 475px; */
     width: 0;
     margin: 0;
     overflow: hidden;
@@ -595,11 +605,14 @@ i {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    height: 185px;
+    height: 80px;
+    /* height: 185px; */
     overflow: hidden;
     white-space: nowrap;
     margin-bottom: auto;
     margin-top: 40px;
+    margin-right: 0px;
+    margin-left: 0px;
     align-items: flex-start;
   }
   .flex-list li {
@@ -692,7 +705,7 @@ i {
   }
   .sub-footer {
     text-align: center;
-    font-size: 6vw;
+    font-size: 3vw;
     flex-direction: column;
     align-items: center;
     margin: auto 0;
