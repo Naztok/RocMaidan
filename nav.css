@@ -335,8 +335,10 @@ i {
 .our-mission-box {
   height: inherit;
   /* width: 30vw; */
-  grid-row-start: 22;
-  grid-row-end: 90;
+  /* grid-row-start: 22; */
+  grid-row-start: 39;
+  /*grid-row-end: 90;*/
+  grid-row-end: 73;
   grid-column-start: 4;
   grid-column-end: 17;
   font-size: 1.25vw;
