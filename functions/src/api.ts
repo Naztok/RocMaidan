@@ -1,7 +1,9 @@
+/* tslint:disable */
 import express, { NextFunction, Request, Response } from "express";
 import cors from "cors";
 export const app = express();
-import { createPaymentIntent, createTestPaymentIntent } from "./payments";
+//import { createStripeCheckoutSession } from "./checkout";
+//import { handleStripeWebhook } from "./webhooks";
 //import { auth } from "./firebase";
 
 // Allows cross origin requests
@@ -22,7 +24,7 @@ const runAsync = (callback) => {
   };
 };
 
-app.post(
+/* app.post(
   "/payments/",
   runAsync(async ({ body }, res) => {
     res.send(await createPaymentIntent(body.amount, body.email));
@@ -34,7 +36,7 @@ app.post(
   runAsync(async ({ body }, res) => {
     res.send(await createTestPaymentIntent(body.amount, body.email));
   })
-);
+); */
 
 /* app.post("/test", (req, res) => {
   const amount = req.body.amount;
