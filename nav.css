@@ -28,7 +28,7 @@ header p,
 button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.25rem;
   color: var(--header-font-color);
   text-decoration: none;
 }
@@ -72,7 +72,7 @@ header {
   align-items: center;
   padding: 0px 4%;
   /* background-color: var(--bg-color); */
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem black;
 }
 .sticky {
   position: fixed;
@@ -93,12 +93,12 @@ img {
 }
 #div-image {
   height: auto;
-  width: 181px;
+  width: auto;
 }
 .social-container {
   display: grid;
-  row-gap: 4px;
-  margin: 1em 0;
+  row-gap: 0.25rem;
+  margin: 1rem 0;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 1fr;
   grid-template-areas:
@@ -124,7 +124,7 @@ img {
 }
 .nav-links li {
   display: inline-block;
-  padding: 0px 4px;
+  padding: 0px 0.125rem;
 }
 .nav-links li a {
   transition: all 0.3s ease 0s;
@@ -136,10 +136,10 @@ img {
   color: #0088a9;
 }
 button {
-  padding: 9px 25px;
+  padding: 0.5625rem 1.5625rem;
   background-color: var(--bg-yellow);
   border: none;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -164,8 +164,8 @@ i {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: -2px;
-  margin-right: 1em;
+  margin-left: -0.125rem;
+  margin-right: 1.25rem;
   white-space: nowrap;
 }
 .flex-list li {
@@ -178,17 +178,17 @@ i {
   display: none;
 }
 .burger div {
-  width: 25px;
-  height: 3px;
+  width: 1.5625rem;
+  height: 0.1875rem;
   background-color: var(--header-font-color);
-  margin: 5px;
-  border-radius: 2px;
+  margin: 0.3125rem;
+  border-radius: 0.125rem;
 }
 .flags {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  margin-left: 1em;
+  margin-left: 1rem;
 }
 .flag {
   width: 100%;
@@ -200,7 +200,7 @@ i {
 }
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url("https://www.rocmaidan.org/website%20build/denys-rodionenko-G__p-KB1bj4-unsplash.jpg");
+    url("./website%20build/denys-rodionenko-G__p-KB1bj4-unsplash.jpg");
   /* url("https://raw.githubusercontent.com/dpsoccerdude101/dpsoccerdude101.github.io/master/RocMaidan/banner.jpg"); */
   height: 75vh;
   background-position: 50% 20%;
@@ -219,7 +219,7 @@ i {
 }
 .banner-text {
   text-align: center;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem black;
   /*
   display: flex;
   flex-direction: column;
@@ -239,14 +239,14 @@ i {
   font-size: 2vw;
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid white;
-  padding: 4px 12.5px;
-  border-radius: 25px;
+  padding: 0.25rem 0.78125rem;
+  border-radius: 1.5625rem;
 }
 #donate-banner:hover {
   background-color: rgba(0, 0, 0, 0.25);
 }
 #rocMaidanSquareLogo {
-  width: 65px;
+  width: 4.0625rem;
   height: auto;
   border-radius: 50%;
   border: 1px solid white;
@@ -320,7 +320,7 @@ i {
   grid-row-end: -1;
   grid-column-start: 4;
   grid-column-end: 33;
-  filter: drop-shadow(2px 2px 20px var(--drop-shadow));
+  filter: drop-shadow(0.125rem 0.125rem 1.25rem var(--drop-shadow));
 }
 .our-mission-div {
   height: auto;
@@ -330,7 +330,7 @@ i {
   grid-row-end: -1;
   grid-column-start: 13;
   grid-column-end: 42;
-  filter: drop-shadow(2px 2px 20px var(--drop-shadow));
+  filter: drop-shadow(0.125rem 0.125rem 1.25rem var(--drop-shadow));
 }
 .our-mission-box {
   height: inherit;
@@ -346,9 +346,9 @@ i {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  padding: 1em;
+  padding: 1rem;
   background-color: white;
-  filter: drop-shadow(2px 2px 20px var(--drop-shadow));
+  filter: drop-shadow(0.125rem 0.125rem 1.25rem var(--drop-shadow));
 }
 .article-img {
   max-width: 100%;
@@ -366,13 +366,13 @@ i {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  padding: 1em;
+  padding: 1rem;
   background-color: white;
-  filter: drop-shadow(2px 2px 20px var(--drop-shadow));
+  filter: drop-shadow(0.125rem 0.125rem 1.25rem var(--drop-shadow));
 }
 .article-paragraph {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   /* font-size: 1.25vw; */
 }
 .article-header {
@@ -381,8 +381,8 @@ i {
   font-weight: bold;
 }
 .learn-more {
-  font-size: 1.125vw;
-  padding: 0.5em;
+  font-size: 0.625rem;
+  padding: 0.625rem;
   margin-left: auto;
 }
 .ucc-div {
@@ -516,7 +516,7 @@ i {
     height: auto;
   }
   a {
-    font-size: 16px;
+    font-size: 1rem;
     transition: 1s;
   }
   .flex-list ul {
@@ -524,7 +524,7 @@ i {
     flex-shrink: 2;
   }
   .flags {
-    margin-left: 0.5em;
+    margin-left: 0.625rem;
   }
   .flex-list ul {
     flex-wrap: wrap;
@@ -535,7 +535,7 @@ i {
     width: 108.6px;
   }
   .social-container {
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -543,10 +543,10 @@ i {
   header a,
   header button,
   header p {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
   .social-container {
-    margin: 1em 0;
+    margin: 1rem 0;
   }
 
   .burger {
@@ -607,12 +607,12 @@ i {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    height: 80px;
+    height: 5rem;
     /* height: 185px; */
     overflow: hidden;
     white-space: nowrap;
     margin-bottom: auto;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     margin-right: 0px;
     margin-left: 0px;
     align-items: flex-start;
@@ -626,13 +626,13 @@ i {
     overflow: hidden;
   }
   .flex-list li > a {
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 0.0625rem 0.0625rem 0.125rem black;
   }
   .flex-list.stickyFlex {
     background-color: var(--bg-color);
   }
   #social a {
-    font-size: 2em;
+    font-size: 2rem;
     /* margin-right: auto; */
   }
   #social {
@@ -644,8 +644,8 @@ i {
   .flags {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    column-gap: 0.75em;
-    margin-bottom: 1em;
+    column-gap: 0.75rem;
+    margin-bottom: 1rem;
     margin-left: 0;
   }
   .flag {
@@ -654,7 +654,7 @@ i {
   }
   .flag-image {
     height: auto;
-    width: 40px;
+    width: 2.5rem;
   }
   .article {
     padding: 6vh 0;
@@ -678,17 +678,17 @@ i {
   }
   .our-mission-box {
     height: auto;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .about-us-box {
     height: auto;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .article-paragraph {
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
   }
   .learn-more {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   #help-ukraine {
     display: block;

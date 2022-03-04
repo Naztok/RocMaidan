@@ -1,9 +1,15 @@
 import * as functions from "firebase-functions";
+import * as admin from "firebase-admin";
 
-// // Start writing Firebase Functions
-// // https://firebase.google.com/docs/functions/typescript
+admin.initializeApp();
+
+import { app } from "./api";
+export const api = functions.https.onRequest(app);
+
+// // Create and Deploy Your First Cloud Functions
+// // https://firebase.google.com/docs/functions/write-firebase-functions
 //
-// export const helloWorld = functions.https.onRequest((request, response) => {
+// exports.helloWorld = functions.https.onRequest((request, response) => {
 //   functions.logger.info("Hello logs!", {structuredData: true});
 //   response.send("Hello from Firebase!");
 // });

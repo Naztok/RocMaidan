@@ -9,12 +9,22 @@
     "logs": "firebase functions:log"
   },
   "engines": {
-    "node": "16"
+    "node": "14"
   },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "singleQuote": true,
+    "jsxSingleQuote": true
+  },
+  "type": "module",
   "main": "lib/index.js",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
     "firebase-admin": "^9.8.0",
-    "firebase-functions": "^3.14.1"
+    "firebase-functions": "^3.14.1",
+    "node-fetch": "^3.2.1"
   },
   "devDependencies": {
     "typescript": "^3.8.0",
